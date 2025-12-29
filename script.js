@@ -1,5 +1,5 @@
 const config = {
-    title: "Twelve Months.", // Page 1
+    title: "Forever Love.", // Page 1
     passcode: "1205", // Page 2
     couple: "https://via.placeholder.com/600", // รูปคู่หน้า 2
     startDate: "2023-12-05", // วันเริ่มคบ (ปี-เดือน-วัน)
@@ -70,7 +70,7 @@ function renderGallery() {
             <div class="memory-text-box">
                 <span class="memory-num">0${i+1}</span>
                 <h3 class="memory-title">${item.desc}</h3>
-                <p class="text-[10px] tracking-[4px] uppercase text-gray-300">Moment Captured</p>
+                <p class="text-[10px] tracking-[4px] uppercase text-[#E0A7B5]">Moment Captured</p>
             </div>
         </div>
     `).join('');

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary | Luxury Edition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&family=Prompt:wght@200;300;400&family=Mali:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="page1" class="page active">
+        <div class="content-fade text-center">
+            <h1 id="title1" class="luxury-text text-6xl mb-4"></h1>
+            <p class="tracking-[0.5em] text-gray-400 text-xs mb-12 uppercase">Private Exhibition</p>
+            <button onclick="nextPage(2)" class="btn-minimal">ENTER STORY</button>
+        </div>
+    </section>
+
+    <section id="page2" class="page">
+        <div class="lock-wrap text-center">
+            <div class="main-photo-container mb-8">
+                <img id="coupleImg" src="" class="img-luxury-blur">
+                <div id="lockIcon" class="lock-label">LOCKED</div>
+            </div>
+            <input type="password" id="passInput" placeholder="PASSCODE" maxlength="4" class="minimal-input">
+            <button onclick="checkPass()" class="btn-minimal mt-8 block mx-auto">UNLOCK</button>
+        </div>
+    </section>
+
+    <section id="page4" class="page">
+        <span class="text-xs tracking-[0.4em] text-gray-400 mb-8 uppercase">Together Since</span>
+        <div id="timer" class="timer-luxury"></div>
+        <button onclick="nextPage(5)" class="btn-minimal mt-16">SCROLL TO MEMORIES</button>
+    </section>
+
+    <section id="page5" class="page scrollable py-24">
+        <div class="gallery-container">
+            <h2 class="luxury-text text-5xl text-center mb-32 italic">Memories.</h2>
+            <div id="memoryList" class="space-y-40">
+                </div>
+        </div>
+        <div class="flex justify-center py-32">
+            <button onclick="nextPage(6)" class="btn-minimal">READ THE LETTER</button>
+        </div>
+    </section>
+
+    <section id="page6" class="page">
+        <div class="letter-minimal">
+            <div class="letter-inner">
+                <p id="clientLetter" class="handwriting-text"></p>
+                <div class="mt-12 text-right text-xs tracking-[0.3em] uppercase text-gray-400">Yours, Always</div>
+            </div>
+        </div>
+        <button onclick="nextPage(7)" class="btn-minimal mt-16">THE END</button>
+    </section>
+
+    <section id="page7" class="page">
+        <h2 class="luxury-text text-5xl mb-16 italic">Do you love me?</h2>
+        <div class="flex flex-col gap-6 w-64">
+            <button onclick="goMusic()" class="btn-minimal bg-black text-white py-5">I DO</button>
+            <button onmouseover="runAway(this)" class="text-gray-300 text-xs tracking-widest uppercase">No</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
